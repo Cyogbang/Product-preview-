@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    width: 1440px;
+}
+
+.container {
+    width: 35rem;
+    margin:auto;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.pics {
+    background-image: url(/Main/images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    font-size: 14px;
+}
+
+.pics_details {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    width: 50%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.item {
+    letter-spacing: 0.4rem;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.item_name{
+    padding-top: 0.7rem;
+    font-family: "Fraunces", serif;
+}
+
+.item_details {
+    padding-top: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+}
+
+.prices {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.new_price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 10rem;
+    font-family: "Fraunces", serif;
+}
+
+.old_price {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding-top: 0.7rem;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    border: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 3rem;
+    font-size: 0.8rem;
+}
+
+.button_icon {
+    margin-right: 0.5rem;
+}
+@media screen and (max-width: 375px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pics {
+        background-image: url(/Main/images/image-product-mobile.jpg);
+        width: 21.5rem;
+        height: 15.5rem;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+
+    .pics_details {
+        width: 21.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}
